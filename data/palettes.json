@@ -1,0 +1,204 @@
+{
+  "flatty": {
+    "source": "https://coolors.co/app/fdfffc-c1292e-9bffaf-235789-020100 by @St1ggy",
+    "colors": [
+      "#2B82C9",
+      "#2CCA90",
+      "#EEE657",
+      "#FBB941",
+      "#FB6042"
+      ]
+  },
+  "flatpaleta": {
+    "source": "https://coolors.co/3498db-1abc9c-e74c3c-f1c40f-e67e22 @mcferlini",
+    "colors": [
+      "#3498db",
+      "#1abc9c",
+      "#e74c3c",
+      "#f1c40f",
+      "#e67e22"
+      ]
+  },
+  "dg4": {
+    "source": "https://coolors.co/app/52a076-57568b-dff2d8-c6dea6-7ebdc3 @ivan",
+    "colors": [
+      "#52a076",
+      "#57568b",
+      "#dff2d8",
+      "#c6dea6",
+      "#7ebdc3"
+      ]
+  },
+    "few_light": {
+    "source": "http://blog.axc.net/its-the-colors-you-have/",
+    "colors": [
+      "#8C8C8C",
+      "#88BDE6",
+      "#FBB258",
+      "#90CD97",
+      "#F6AAC9",
+      "#BFA554",
+      "#BC99C7",
+      "#EDDD46",
+      "#F07E6E"]
+  },
+    "few_medium": {
+    "source": "http://blog.axc.net/its-the-colors-you-have/",
+    "colors": [
+      "#4D4D4D",
+      "#5DA5DA",
+      "#FAA43A",
+      "#60BD68",
+      "#F17CB0",
+      "#B2912F",
+      "#B276B2",
+      "#DECF3F",
+      "#F15854"]
+  },
+    "few_dark": {
+    "source": "http://blog.axc.net/its-the-colors-you-have/",
+    "colors": [
+      "#000000",
+      "#265DAB",
+      "#DF5C24",
+      "#059748",
+      "#E5126F",
+      "#9D722A",
+      "#7B3A96",
+      "#C7B42E",
+      "#CB2027"]
+  },
+  "color_blind": {
+    "source": "http://tools.medialab.sciences-po.fr/iwanthue/",
+    "colors": [
+      "#b94c75",
+      "#75aa56",
+      "#8259b1",
+      "#be7239",
+      "#66a1e5"]
+  },
+  "fancy": {
+    "source": "http://tools.medialab.sciences-po.fr/iwanthue/",
+    "colors": [
+      "#9cc0ec",
+      "#b8d8a7",
+      "#e5afd4",
+      "#82d8d8",
+      "#e5bb99"]
+  },
+  "pastel": {
+    "source": "http://tools.medialab.sciences-po.fr/iwanthue/",
+    "colors": [
+      "#e6b8b3",
+      "#90cad2",
+      "#cad5b3",
+      "#c3bcde",
+      "#bfe6e5"]
+  },
+  "pastel2": {
+    "source": "http://tools.medialab.sciences-po.fr/iwanthue/",
+    "colors": [
+      "#89df93",
+      "#d6b0dc",
+      "#d0d05a",
+      "#90d8d5",
+      "#e6bc91"]
+  },
+  "ashes": {
+    "source": "upper half of base16 ashes https://github.com/chriskempson/base16-vim/blob/master/colors/base16-ashes.vim",
+    "colors": [
+      "#C7AE95",
+      "#C7C795",
+      "#AEC795",
+      "#95C7AE",
+      "#95AEC7",
+      "#AE95C7",
+      "#C795AE",
+      "#C79595"]
+  },
+    "monokai": {
+    "source": "upper half of base16 monokai https://github.com/chriskempson/base16-vim/blob/master/colors/base16-ashes.vim",
+    "colors": [
+      "#F92672",
+      "#FD971F",
+      "#F4BF75",
+      "#A6E22E",
+      "#A1EFE4",
+      "#66D9EF",
+      "#AE81FF",
+      "#CC6633"]
+  },
+  "flat": {
+    "source": "upper half of base16 flat http://chriskempson.github.io/base16",
+    "colors": [
+      "#E74C3C",
+      "#E67E22",
+      "#F1C40F",
+      "#2ECC71",
+      "#1ABC9C",
+      "#3498DB",
+      "#9B59B6",
+      "#BE643C"
+    ]
+  },
+  "five38": {
+    "source": "https://gist.github.com/zachwill/d5190af1a7f455dea45d",
+    "colors": [
+      "#30a2da",
+      "#fc4f30",
+      "#e5ae38",
+      "#6d904f",
+      "#8b8b8b"
+    ]
+  },
+  "beach": {
+    "source": "http://www.color-hex.com/color-palette/895",
+    "colors": [
+      "#96CEB4",
+      "#FFEEAD",
+      "#FF6F69",
+      "#FFCC5C",
+      "#88D8B0"
+    ]
+  },
+  "retro": {
+    "source": "http://www.color-hex.com/color-palette/165",
+    "colors": [
+      "#666547",
+      "#FB2E01",
+      "#6FCB9F",
+      "#FFE28A",
+      "#FFFEB3"
+    ]
+  },
+  "ft": {
+    "source": "",
+    "colors": [
+      "#B1493F",
+      "#DB7365",
+      "#75A5C2",
+      "#EDA45E",
+      "#8A8856"
+    ]
+  },
+  "economist": {
+    "source": "",
+    "colors": [
+      "#6392A4",
+      "#AAAAAC",
+      "#70CEF3",
+      "#00485F",
+      "#039DD7"
+    ]
+  },
+  "bain": {
+    "source": "http://evolver.fm/wp-content/uploads/2011/02/riaa_shipment_chart_bain.png",
+    "colors": [
+      "#A5A9AC",
+      "#21201E",
+      "#D1D2D4",
+      "#808185",
+      "#EE3324"
+    ]
+  }
+}
