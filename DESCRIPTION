@@ -16,6 +16,7 @@ Imports:
 Suggests:
     knitr,
     rmarkdown,
-    RColorBrewer
+    RColorBrewer,
+    testthat
 VignetteBuilder: knitr
 RoxygenNote: 5.0.1
