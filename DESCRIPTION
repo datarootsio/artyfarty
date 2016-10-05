@@ -1,19 +1,18 @@
 Package: artyfarty
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Title: Themes for ggplot2
+Version: 0.0.1
+Authors@R: person("Bart","Smeets", email="bartsmeets86@gmail.com", role=c("aut","cre"))
+Description: A combination of ggplot2 themes, palettes and convenience functions.
+License: MIT + file LICENSE
 LazyData: TRUE
-Depends:
-    ggplot2,
-    magrittr,
-    jsonlite
 Imports:
     grid,
-    tidyr
+    tidyr,
+    ggplot2,
+    grDevices,
+    jsonlite,
+    readbitmap
 Suggests:
     knitr,
     rmarkdown,

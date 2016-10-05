@@ -5,12 +5,12 @@ PALETTES <- (function(filename){
     pals[[p_name]]$size <- length(pals[[p_name]]$colors)
   }
   pals
-})("data/palettes.json")
+})(system.file("extdata", "palettes.json", package = "artyfarty"))
 
 
 #' Show details of specific palette
 #'
-#' @param palette_name
+#' @param palette_name the name of the palette
 #'
 #' @export
 #' @examples
@@ -94,9 +94,9 @@ plot_palettes<-function(){
     c("name", sapply(1:(NCOL(m) - 1), function(i) i))
 
   df<-
-    m %>%
-    as.data.frame(stringsAsFactors=FALSE) %>%
-    tidyr::gather(k, col, 2:NCOL(m))
+    tidyr::gather(
+      as.data.frame(m, stringsAsFactors=FALSE),
+      k, col, 2:NCOL(m))
 
   col <- df$col
   names(col) <- col

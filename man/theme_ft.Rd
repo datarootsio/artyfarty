@@ -6,6 +6,9 @@
 \usage{
 theme_ft(grid_lines = "vertical")
 }
+\arguments{
+\item{grid_lines}{the direction of the grid lines, either \code{vertical} or \code{horizontal}}
+}
 \value{
 theme
 }

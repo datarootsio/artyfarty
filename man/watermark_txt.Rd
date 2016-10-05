@@ -16,8 +16,6 @@ watermark_txt(txt, x, y, location = "br", gpar = grid::gpar())
 \item{location}{one of \code{tr} (top right), \code{tl} (top left), \code{bl} (bottom left), \code{br} (bottom right), \code{center} (view center)}
 
 \item{gpar}{\code{gpar} object passed to \code{rasterGrob}}
-
-\item{alpha}{transparency value}
 }
 \value{
 a ggplot object

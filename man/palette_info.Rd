@@ -7,7 +7,7 @@
 palette_info(palette_name)
 }
 \arguments{
-\item{palette_name}{}
+\item{palette_name}{the name of the palette}
 }
 \description{
 Show details of specific palette

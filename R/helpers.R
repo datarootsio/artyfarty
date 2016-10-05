@@ -8,7 +8,7 @@ fonts_selector <- function(...) {
   req_fonts <- unlist(list(...))
   available <- intersect(req_fonts, names(grDevices::postscriptFonts()))
   if(length(available) == 0)
-    stop("Non of the requested font were found: ", font_vec)
+    stop("Non of the requested font were found: ", req_fonts)
 
   available[1]
 }

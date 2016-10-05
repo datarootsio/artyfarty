@@ -3,6 +3,7 @@
 #' A theme that was strongly based on http://minimaxir.com/2015/02/ggplot-tutorial/
 #'
 #' @return theme
+#' @import ggplot2 grid
 #' @export
 theme_farty <- function(){
   palette <- c("#FFFFFF", "#F0F0F0", "#D9D9D9", "#BDBDBD", "#969696", "#737373",
@@ -43,6 +44,8 @@ theme_farty <- function(){
 #' Theme 'five38'
 #'
 #' A theme inspired by http://fivethirtyeight.com/
+#'
+#' @param grid_lines the direction of the grid lines, either \code{vertical} or \code{horizontal}
 #'
 #' @return theme
 #' @export
@@ -92,6 +95,8 @@ theme_five38 <- function(grid_lines = "vertical"){
 #' Theme 'ft'
 #'
 #' A theme inspired by https://www.ft.com/
+#'
+#' @param grid_lines the direction of the grid lines, either \code{vertical} or \code{horizontal}
 #'
 #' @return theme
 #' @export
@@ -144,6 +149,8 @@ theme_ft <- function(grid_lines = "vertical"){
 #' Theme 'economist'
 #'
 #' A theme inspired by https://www.ft.com/
+#'
+#' @param grid_lines the direction of the grid lines, either \code{vertical} or \code{horizontal}
 #'
 #' @return theme
 #' @export
@@ -203,6 +210,8 @@ theme_economist <- function(grid_lines = "vertical"){
 #' Theme 'bain'
 #'
 #' A theme inspired by https://www.ft.com/
+#'
+#' @param grid_lines the direction of the grid lines, either \code{vertical} or \code{horizontal}
 #'
 #' @return theme
 #' @export

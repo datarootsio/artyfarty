@@ -51,7 +51,6 @@ watermark_img<-function(filename, x, y, width=32, location="br", alpha = 1, ...)
 #' @param x the x location of the watermark (0-1 scale)
 #' @param y the y location of the watermark (0-1 scale)
 #' @param location one of \code{tr} (top right), \code{tl} (top left), \code{bl} (bottom left), \code{br} (bottom right), \code{center} (view center)
-#' @param alpha transparency value
 #' @param gpar \code{gpar} object passed to \code{rasterGrob}
 #'
 #' @return a ggplot object
