@@ -7,10 +7,9 @@ output:
     fig_width: 6
 ---
 
-> generated using version `r packageVersion("artyfarty")`
-
-
 [![Build Status](https://travis-ci.org/Bart6114/artyfarty.svg?branch=master)](https://travis-ci.org/Bart6114/artyfarty)
+
+> documentation generated using version `r packageVersion("artyfarty")`
 
 ```{r, include=FALSE}
 library(artyfarty)
