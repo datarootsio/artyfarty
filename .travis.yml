@@ -1,4 +1,10 @@
 language: r
 cache: packages
+
+env: _R_CHECK_CRAN_INCOMING_=FALSE
+
+r_github_packages:
+  - jimhester/covr
+
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - Rscript -e 'library(covr);codecov()'
