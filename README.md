@@ -1,3 +1,8 @@
+> generated using version 0.0.1
+
+[![Build
+Status](https://travis-ci.org/Bart6114/artyfarty.svg?branch=master)](https://travis-ci.org/Bart6114/artyfarty)
+
 `artyfarty` focuses on providing easy access to a few 'nice' ggplot
 theme, it also includes a number of predefined palettes and watermark
 convenience functions.

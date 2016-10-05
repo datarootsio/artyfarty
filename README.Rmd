@@ -1,12 +1,16 @@
 ---
 title: "artyfarty: a quick how-to"
 author: "Bart Smeets"
-date: "`r Sys.Date()`"
 output: 
   md_document:
     fig_height: 4
     fig_width: 6
 ---
+
+> generated using version `r packageVersion("artyfarty")`
+
+
+[![Build Status](https://travis-ci.org/Bart6114/artyfarty.svg?branch=master)](https://travis-ci.org/Bart6114/artyfarty)
 
 ```{r, include=FALSE}
 library(artyfarty)
