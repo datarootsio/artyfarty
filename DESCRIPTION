@@ -9,6 +9,7 @@ LazyData: TRUE
 Imports:
     grid,
     tidyr,
+    dplyr,
     ggplot2,
     grDevices,
     jsonlite,

@@ -98,12 +98,15 @@ plot_palettes<-function(){
       as.data.frame(m, stringsAsFactors=FALSE),
       k, col, 2:NCOL(m))
 
+  df<-
+    dplyr::mutate(df, k = as.numeric(k))
+
   col <- df$col
   names(col) <- col
 
 
   ggplot(df) +
-    aes(x=k, y=name, fill=col) +
+    aes(x=as.factor(k), y=name, fill=col) +
     geom_tile() +
     scale_fill_manual(values=col) +
     theme_bw() +
