@@ -4,7 +4,7 @@
 \alias{watermark_txt}
 \title{Add a watermark text}
 \usage{
-watermark_txt(txt, x, y, location = "br", gpar = grid::gpar())
+watermark_txt(txt, x, y, location = "br", rot = 0, ...)
 }
 \arguments{
 \item{txt}{the text to display}
@@ -14,6 +14,8 @@ watermark_txt(txt, x, y, location = "br", gpar = grid::gpar())
 \item{y}{the y location of the watermark (0-1 scale)}
 
 \item{location}{one of \code{tr} (top right), \code{tl} (top left), \code{bl} (bottom left), \code{br} (bottom right), \code{center} (view center)}
+
+\item{rot}{the rotation of the text}
 
 \item{gpar}{\code{gpar} object passed to \code{rasterGrob}}
 }

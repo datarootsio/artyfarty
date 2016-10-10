@@ -51,11 +51,17 @@ watermark_img<-function(filename, x, y, width=32, location="br", alpha = 1, ...)
 #' @param x the x location of the watermark (0-1 scale)
 #' @param y the y location of the watermark (0-1 scale)
 #' @param location one of \code{tr} (top right), \code{tl} (top left), \code{bl} (bottom left), \code{br} (bottom right), \code{center} (view center)
+#' @param rot the rotation of the text
 #' @param gpar \code{gpar} object passed to \code{rasterGrob}
 #'
 #' @return a ggplot object
 #' @export
-watermark_txt<-function(txt, x, y, location="br", gpar=grid::gpar()){
+watermark_txt<-function(txt, x, y, location="br", rot=0, ...){
+  extra_gpar <- list(...)
+  gpar <- grid::get.gpar()
+
+  if(length(extra_gpar) > 0)
+    gpar <- modifyList(gpar, extra_gpar)
 
   if(all(missing(x), missing(y))){
 
@@ -78,7 +84,7 @@ watermark_txt<-function(txt, x, y, location="br", gpar=grid::gpar()){
   }
 
 
-  wm_grob <- grid::textGrob(label = txt, y=y, x=x, gpar)
+  wm_grob <- grid::textGrob(label = txt, y=y, x=x, rot=rot, gp=gpar)
   annotation_custom(wm_grob)
 
 }

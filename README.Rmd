@@ -26,7 +26,6 @@ library(ggplot2)
 devtools::install_github('bart6114/artyfarty')
 ```
 
-
 # Available themes
  
 ## farty
@@ -289,5 +288,14 @@ ggplot(mtcars) +
   ggtitle("Vroom") +
   scale_color_manual(values = pal("ft")) +
   watermark_txt("watermark", location="br")
+```
+
+```{r}
+ggplot(mtcars) +
+  watermark_txt("watermark", location="center", rot=45, fontsize=36, alpha=.2) +
+  geom_point(aes(x=wt, y=qsec, color=as.factor(cyl))) +
+  theme_ft() +
+  ggtitle("Vroom") +
+  scale_color_manual(values = pal("ft"))
 ```
 
