@@ -5,17 +5,18 @@
 #' @param y the y location of the watermark (0-1 scale)
 #' @param width the width of the watermark image (in 'points')
 #' @param location one of \code{tr} (top right), \code{tl} (top left), \code{bl} (bottom left), \code{br} (bottom right), \code{center} (view center)
-#' @param alpha transparency value
-#' @param ... arguments passed to \code{rasterGrob}
+#' @param ... arguments passed to \code{rasterGrob} (e.g. \code{alpha})
 #'
 #' @return a ggplot object
 #' @export
-watermark_img<-function(filename, x, y, width=32, location="br", alpha = 1, ...){
+watermark_img<-function(filename, x, y, width=32, location="br", ...){
+  extra_gpar <- list(...)
+  gpar <- grid::get.gpar()
+
+  if(length(extra_gpar) > 0)
+    gpar <- modifyList(gpar, extra_gpar)
 
   img <- readbitmap::read.bitmap(filename)
-  img_ratio <- dim(img)[2] / dim(img)[1]
-
-  img_alpha <- matrix(rgb(img[,,1],img[,,2],img[,,3], img[,,4] * alpha), nrow=dim(img)[1])
 
   if(all(missing(x), missing(y))){
 
@@ -37,7 +38,7 @@ watermark_img<-function(filename, x, y, width=32, location="br", alpha = 1, ...)
     }
   }
 
-  wm_grob <- grid::rasterGrob(img_alpha, interpolate=TRUE, width=unit(width, "points"), y=y, x=x, ...)
+  wm_grob <- grid::rasterGrob(img, interpolate=TRUE, width=unit(width, "points"), y=y, x=x, gp=gpar)
 
   annotation_custom(wm_grob)
 

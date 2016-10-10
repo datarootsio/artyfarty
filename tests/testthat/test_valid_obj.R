@@ -11,8 +11,4 @@ test_that("themes return a theme object", {
     expect_s3_class(get(th)(), "theme")
   }
 
-
-
-
-
 })

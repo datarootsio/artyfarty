@@ -284,7 +284,7 @@ you just need to be able to to add a simple watermark.
       theme_retro() +
       ggtitle("Sparkly stones") +
       scale_fill_manual(values = pal("retro")) +
-      watermark_img("vignettes/Rlogo.png", alpha=.4, location="tl")
+      watermark_img("vignettes/Rlogo.png", location="tl", alpha=.4)
 
 ![](README_files/figure-markdown_strict/unnamed-chunk-15-1.png)
 
@@ -296,3 +296,12 @@ you just need to be able to to add a simple watermark.
       watermark_txt("watermark", location="br")
 
 ![](README_files/figure-markdown_strict/unnamed-chunk-16-1.png)
+
+    ggplot(mtcars) +
+      watermark_txt("watermark", location="center", rot=45, fontsize=36, alpha=.2) +
+      geom_point(aes(x=wt, y=qsec, color=as.factor(cyl))) +
+      theme_ft() +
+      ggtitle("Vroom") +
+      scale_color_manual(values = pal("ft"))
+
+![](README_files/figure-markdown_strict/unnamed-chunk-17-1.png)
