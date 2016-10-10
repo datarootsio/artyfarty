@@ -4,7 +4,7 @@
 \alias{watermark_img}
 \title{Add a watermark image}
 \usage{
-watermark_img(filename, x, y, width = 32, location = "br", ...)
+watermark_img(filename, x, y, width = 32, location = "br", alpha = 1, ...)
 }
 \arguments{
 \item{filename}{the filename of the}
@@ -17,7 +17,9 @@ watermark_img(filename, x, y, width = 32, location = "br", ...)
 
 \item{location}{one of \code{tr} (top right), \code{tl} (top left), \code{bl} (bottom left), \code{br} (bottom right), \code{center} (view center)}
 
-\item{...}{arguments passed to \code{grid::gpar()} (e.g. \code{alpha})}
+\item{alpha}{transparency value}
+
+\item{...}{arguments passed to \code{grid::gpar()}}
 }
 \value{
 a ggplot object

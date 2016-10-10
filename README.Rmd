@@ -278,7 +278,7 @@ ggplot(diamonds) +
   theme_retro() +
   ggtitle("Sparkly stones") +
   scale_fill_manual(values = pal("retro")) +
-  watermark_img("vignettes/Rlogo.png", location="tl", alpha=.4)
+  watermark_img("vignettes/Rlogo.png", location="tl", alpha=.5)
 ```
 
 ```{r}

@@ -284,7 +284,7 @@ you just need to be able to to add a simple watermark.
       theme_retro() +
       ggtitle("Sparkly stones") +
       scale_fill_manual(values = pal("retro")) +
-      watermark_img("vignettes/Rlogo.png", location="tl", alpha=.4)
+      watermark_img("vignettes/Rlogo.png", location="tl", alpha=.5)
 
 ![](README_files/figure-markdown_strict/unnamed-chunk-15-1.png)
 
