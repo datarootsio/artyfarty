@@ -17,7 +17,7 @@ watermark_img(filename, x, y, width = 32, location = "br", ...)
 
 \item{location}{one of \code{tr} (top right), \code{tl} (top left), \code{bl} (bottom left), \code{br} (bottom right), \code{center} (view center)}
 
-\item{...}{arguments passed to \code{rasterGrob} (e.g. \code{alpha})}
+\item{...}{arguments passed to \code{grid::gpar()} (e.g. \code{alpha})}
 }
 \value{
 a ggplot object

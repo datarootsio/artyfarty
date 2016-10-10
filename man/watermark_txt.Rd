@@ -17,7 +17,7 @@ watermark_txt(txt, x, y, location = "br", rot = 0, ...)
 
 \item{rot}{the rotation of the text}
 
-\item{gpar}{\code{gpar} object passed to \code{rasterGrob}}
+\item{...}{arguments passed to \code{grid::gpar()} (e.g. \code{alpha})}
 }
 \value{
 a ggplot object
