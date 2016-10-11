@@ -230,5 +230,32 @@
       "#B82E2E",
       "#316395"
     ]
+  },
+  "xmen": {
+    "source": "https://github.com/ndphillips/yarrr/blob/3e265eaee8344ede9e3c47764e78832c0ed47c6a/R/piratepal_function.R",
+    "colors": [
+      "#026CCBFF",
+      "#F51E02FF",
+      "#05B102FF",
+      "#FB9F53FF",
+      "#9B9B9BFF",
+      "#FB82BEFF",
+      "#BA6222FF",
+      "#EEC229FF"
+      ]
+  },
+  "pony": {
+    "source": "https://github.com/ndphillips/yarrr/blob/3e265eaee8344ede9e3c47764e78832c0ed47c6a/R/piratepal_function.R",
+    "colors": [
+      "#EB5291FF",
+      "#FBBB68FF",
+      "#F5BACFFF",
+      "#9DDAF5FF",
+      "#6351A0FF",
+      "#ECF1F4FF",
+      "#FEF79EFF",
+      "#1794CEFF",
+      "#972C8DFF"
+      ]
   }
 }

@@ -113,7 +113,7 @@ plot_palettes<-function(){
     labs(x="color",
          y="palette_name",
          title="Available palettes") +
-    theme_farty() +
+    theme_empty() +
     theme(legend.position="none")
 
 }
