@@ -12,4 +12,3 @@ fonts_selector(...)
 \description{
 Will return the first available font
 }
-

@@ -12,4 +12,3 @@ theme
 \description{
 A theme that was strongly based on http://minimaxir.com/2015/02/ggplot-tutorial/
 }
-

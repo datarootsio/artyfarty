@@ -2,7 +2,7 @@
 title: "artyfarty: a quick how-to"
 author: "Bart Smeets"
 output: 
-  md_document:
+  html_document:
     fig_height: 4
     fig_width: 6
 ---
@@ -27,6 +27,25 @@ devtools::install_github('bart6114/artyfarty')
 ```
 
 # Available themes
+
+## dataroots
+
+```{r}
+
+ggplot(diamonds) +
+  geom_bar(aes(cut, fill=cut)) +
+  theme_dataroots() +
+  ggtitle("Sparkly stones") +
+  scale_fill_manual(values = pal("dataroots"))
+
+ggplot(mtcars) +
+  geom_point(aes(x=wt, y=qsec, color=as.factor(cyl))) +
+  theme_dataroots() +
+  ggtitle("Vroom") +
+  scale_color_manual(values = pal("dataroots"))
+
+
+```
  
 ## farty
 
@@ -266,7 +285,7 @@ A number of palettes are available through the `pal()` function. A visual overvi
 plot_palettes()
 ```
 
-Check the `?pal()` documentation for more specifications.
+Check out the examples above to see how these palettes can be applied, refer to the `?pal()` documentation for more details
 
 # Watermarks
 

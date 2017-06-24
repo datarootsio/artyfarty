@@ -9,4 +9,3 @@ list_palettes()
 \description{
 List all available palettes
 }
-

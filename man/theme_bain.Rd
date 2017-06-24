@@ -15,4 +15,3 @@ theme
 \description{
 A theme inspired by https://www.ft.com/
 }
-

@@ -12,4 +12,3 @@ theme
 \description{
 A theme that was strongly based on the base16 monokai scheme http://chriskempson.github.io/base16/
 }
-

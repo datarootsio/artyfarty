@@ -257,5 +257,16 @@
       "#1794CEFF",
       "#972C8DFF"
       ]
+  },
+  "dataroots": {
+    "source": "http://dataroots.io",
+    "colors": [
+      "#52BE7F",
+      "#27ae60",
+      "#3498db",
+      "#2980b9",
+      "#34495e",
+      "#2c3e50"
+    ]
   }
 }

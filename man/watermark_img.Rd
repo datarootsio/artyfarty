@@ -27,4 +27,3 @@ a ggplot object
 \description{
 Add a watermark image
 }
-

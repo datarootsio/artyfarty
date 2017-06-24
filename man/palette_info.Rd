@@ -15,4 +15,3 @@ Show details of specific palette
 \examples{
 palette_info('flatpaleta')
 }
-

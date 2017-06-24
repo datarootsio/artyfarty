@@ -12,4 +12,3 @@ theme
 \description{
 A theme that was strongly based on theme 'flat' from the ggthemr package + the base16 flat colors
 }
-

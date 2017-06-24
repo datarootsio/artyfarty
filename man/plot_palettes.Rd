@@ -12,4 +12,3 @@ ggplot2 object
 \description{
 Plot available palettes
 }
-

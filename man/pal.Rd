@@ -20,4 +20,3 @@ a character vector of hex colors
 See the available palettes using \code{list_palettes}.
 \code{pal} will also search for the palette name in \code{RColorBrewer} and return it if found.
 }
-

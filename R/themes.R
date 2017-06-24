@@ -1,3 +1,43 @@
+#' Theme 'dataroots'
+#'
+#' dataroots' home theme
+#'
+#' @return theme
+#' @export
+theme_dataroots <- function(){
+  palette <- c("#FFFFFF", "#F0F0F0", "#D9D9D9", "#BDBDBD", "#52BE7F", "#737373",
+               "#525252", "#252525", "#000000") # = brewer.pal 'greys'
+  color.background = palette[2]
+  color.grid.major = palette[5]
+  color.axis.text = palette[6]
+  color.axis.title = palette[7]
+  color.title = palette[5]
+  color.axis = palette[5]
+
+  theme_bw(base_size=12) +
+    theme(
+
+      panel.border=element_rect(color=color.background),
+
+      panel.grid.major=element_line(color=color.grid.major,size=.25, linetype=3),
+      panel.grid.minor=element_blank(),
+      axis.line.x=element_line(color=color.axis, size=1),
+      axis.line.y=element_line(color=color.axis, size=1),
+      axis.ticks=element_blank(),
+
+      legend.key = element_rect(fill=NA, color=NA),
+      legend.text = element_text(size=rel(.8),color=color.axis.title),
+
+      plot.title=element_text(color=color.title, size=rel(1.4),  face="bold", vjust=0),
+      axis.text.x=element_text(size=rel(1),color=color.axis.text),
+      axis.text.y=element_text(size=rel(1),color=color.axis.text),
+      axis.title.x=element_text(size=rel(.9),color=color.axis.title, vjust=0),
+      axis.title.y=element_text(size=rel(.9),color=color.axis.title, vjust=1.25)
+    )
+
+}
+
+
 #' Theme 'farty'
 #'
 #' A theme that was strongly based on http://minimaxir.com/2015/02/ggplot-tutorial/
@@ -14,7 +54,7 @@ theme_farty <- function(){
   color.axis.title = palette[7]
   color.title = palette[9]
 
-  theme_bw(base_size=9) +
+  theme_bw(base_size=12) +
     theme(
 
       panel.background=element_rect(fill=color.background, color=color.background),
@@ -29,11 +69,11 @@ theme_farty <- function(){
       legend.key = element_rect(fill=color.background, color=NA),
       legend.text = element_text(size=7,color=color.axis.title),
 
-      plot.title=element_text(color=color.title, size=10, vjust=1.25),
-      axis.text.x=element_text(size=7,color=color.axis.text),
-      axis.text.y=element_text(size=7,color=color.axis.text),
-      axis.title.x=element_text(size=8,color=color.axis.title, vjust=0),
-      axis.title.y=element_text(size=8,color=color.axis.title, vjust=1.25),
+      plot.title=element_text(color=color.title, size=rel(1.3), hjust=.5),
+      axis.text.x=element_text(size=rel(.9), color=color.axis.text),
+      axis.text.y=element_text(size=rel(.9), color=color.axis.text),
+      axis.title.x=element_text(size=rel(1), color=color.axis.title, vjust=0),
+      axis.title.y=element_text(size=rel(1), color=color.axis.title, vjust=1.25),
 
       plot.margin = unit(c(0.35, 0.2, 0.3, 0.35), "cm")
     )
@@ -63,7 +103,7 @@ theme_five38 <- function(grid_lines = "vertical"){
     grid.major.y = element_blank()
   }
 
-  theme_bw(base_size=12, base_family = fonts_selector("Helvetica","Arial", "sans", "sans-serif")) +
+  theme_bw(base_size=13, base_family = fonts_selector("Helvetica","Arial", "sans", "sans-serif")) +
     theme(
 
       panel.background=element_rect(fill=color.background, color=color.background),
@@ -80,7 +120,7 @@ theme_five38 <- function(grid_lines = "vertical"){
       legend.key = element_rect(fill=color.background, color=NA),
       legend.text = element_text(size=rel(.8),color=color.text),
 
-      plot.title=element_text(color=color.text, size=rel(1.05), vjust=1.25),
+      plot.title=element_text(color=color.text, size=rel(1.2), hjust=.5),
       axis.text.x=element_text(size=rel(.95),color=color.text),
       axis.text.y=element_text(size=rel(.95),color=color.text, face="bold"),
       axis.title.x=element_text(size=rel(1),color=color.text, vjust=0),
@@ -115,7 +155,7 @@ theme_ft <- function(grid_lines = "vertical"){
     grid.major.y = element_blank()
   }
 
-  theme_bw(base_size=12, base_family = fonts_selector("Times New Roman", "Times", "serif")) +
+  theme_bw(base_size=13, base_family = fonts_selector("Times New Roman", "Times", "serif")) +
     theme(
 
       panel.background=element_rect(fill=color.background, color=color.background),
@@ -133,7 +173,7 @@ theme_ft <- function(grid_lines = "vertical"){
       legend.text = element_text(size=rel(.8),color=color.text),
       legend.position = "top",
 
-      plot.title=element_text(color=color.text, size=rel(1.3), face = "bold"),
+      plot.title=element_text(color=color.text, size=rel(1.4), face = "bold", hjust=.5),
       axis.text.x=element_text(size=rel(.9),color=color.text),
       axis.text.y=element_text(size=rel(.9),color=color.text),
       axis.title.x=element_text(size=rel(1),color=color.text, vjust=0),
@@ -196,7 +236,7 @@ theme_economist <- function(grid_lines = "vertical"){
       legend.key = element_rect(fill=color.background, color=color.background),
       legend.text = element_text(size=rel(.7), color=color.text),
 
-      plot.title=element_text(color=color.text, size=rel(1.2), face = "bold", hjust=0),
+      plot.title=element_text(color=color.text, size=rel(1.3), face = "bold", hjust=0),
       axis.text.x=element_text(size=rel(.9),color=color.text),
       axis.text.y=element_text(size=rel(.9),color=color.text),
       axis.title.x=element_text(size=rel(1),color=color.text, vjust=0),
@@ -246,7 +286,7 @@ theme_bain <- function(grid_lines = "vertical"){
       legend.key = element_rect(fill=NA, color=NA),
       legend.text = element_text(size=rel(.7), color=color.text),
 
-      plot.title=element_text(color=color.text.title, size=rel(1), face = "bold", hjust=0),
+      plot.title=element_text(color=color.text.title, size=rel(1.2), face = "bold", hjust=0),
       axis.text.x=element_text(size=rel(.9),color=color.text),
       axis.text.y=element_text(size=rel(.9),color=color.text),
       axis.title.x=element_text(size=rel(1),color=color.text, vjust=0),
@@ -275,7 +315,7 @@ theme_scientific <- function(){
   color.title = palette[9]
   color.axis = palette[5]
 
-  theme_bw(base_size=11) +
+  theme_bw(base_size=12) +
     theme(
 
       panel.border=element_rect(color=color.background),
@@ -289,7 +329,7 @@ theme_scientific <- function(){
       legend.key = element_rect(fill=NA, color=NA),
       legend.text = element_text(size=rel(.8),color=color.axis.title),
 
-      plot.title=element_text(color=color.title, size=rel(1.2), vjust=1.25),
+      plot.title=element_text(color=color.title, size=rel(1.2), hjust=.5),
       axis.text.x=element_text(size=rel(.9),color=color.axis.text),
       axis.text.y=element_text(size=rel(.9),color=color.axis.text),
       axis.title.x=element_text(size=rel(1),color=color.axis.title, vjust=0),
@@ -311,7 +351,7 @@ theme_monokai <- function(){
   color.text = "#49483E"
   color.axis = "#F9F8F5"
 
-  theme_bw(base_size=12) +
+  theme_bw(base_size=13) +
     theme(
 
       panel.background=element_rect(fill=color.background, color=color.background),
@@ -329,7 +369,7 @@ theme_monokai <- function(){
       legend.text = element_text(size=rel(.8),color=color.text),#color.axis.title),
       legend.title = element_text(color=color.text),
 
-      plot.title=element_text(color=color.text, size=rel(1.2), vjust=1.25),
+      plot.title=element_text(color=color.text, size=rel(1.2), hjust=.5),
       axis.text.x=element_text(size=rel(.95),color=color.text),
       axis.text.y=element_text(size=rel(.95),color=color.text),
       axis.title.x=element_text(size=rel(1),color=color.text, vjust=0),
@@ -350,7 +390,7 @@ theme_monokai_full <- function(){
   color.text = "#F8F8F2"
   color.axis = "#F9F8F5"
 
-  theme_bw(base_size=12) +
+  theme_bw(base_size=13) +
     theme(
 
       panel.background=element_rect(fill=color.background, color=color.background),
@@ -368,7 +408,7 @@ theme_monokai_full <- function(){
       legend.text = element_text(size=rel(.8),color=color.text),#color.axis.title),
       legend.title = element_text(color=color.text),
 
-      plot.title=element_text(color=color.text, size=rel(1.2), vjust=1.25),
+      plot.title=element_text(color=color.text, size=rel(1.2), hjust=.5),
       axis.text.x=element_text(size=rel(.95),color=color.text),
       axis.text.y=element_text(size=rel(.95),color=color.text),
       axis.title.x=element_text(size=rel(1),color=color.text, vjust=0),
@@ -391,7 +431,7 @@ theme_flat <- function(){
   color.grid = "#BDC3C7"
   color.axis.line = "#2C3E50"
 
-  theme_bw(base_size=12) +
+  theme_bw(base_size=13) +
     theme(
 
       panel.background=element_rect(fill=color.background, color=NA),
@@ -409,7 +449,7 @@ theme_flat <- function(){
       legend.text = element_text(size=rel(.8),color=color.text),
       legend.title = element_text(color=color.text),
 
-      plot.title=element_text(color=color.text, size=rel(1.2), vjust=1.25),
+      plot.title=element_text(color=color.text, size=rel(1.2), hjust=.5),
       axis.text.x=element_text(size=rel(.95),color=color.text),
       axis.text.y=element_text(size=rel(.95),color=color.text),
       axis.title.x=element_text(size=rel(1),color=color.text, vjust=0),
@@ -448,7 +488,7 @@ theme_retro <- function(){
       legend.text = element_text(size=rel(.8),color=color.text),
       legend.title = element_text(color=color.text),
 
-      plot.title=element_text(color=color.text, size=rel(1.2)),
+      plot.title=element_text(color=color.text, size=rel(1.2), hjust=.5),
       axis.text.x=element_text(size=rel(.95),color=color.text),
       axis.text.y=element_text(size=rel(.95),color=color.text),
       axis.title.x=element_text(size=rel(1),color=color.text, vjust=0),
@@ -464,6 +504,7 @@ theme_retro <- function(){
 theme_empty<-function(){
   theme_minimal() +
     theme(
+      plot.title=element_text(hjust=.5),
       panel.grid.major = element_blank(),
       panel.grid.minor = element_blank()
     )

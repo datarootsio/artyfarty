@@ -12,4 +12,3 @@ theme
 \description{
 A completely blank theme
 }
-
