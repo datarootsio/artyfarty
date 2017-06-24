@@ -11,6 +11,8 @@
 #' @param ... arguments passed to \code{grid::gpar()}
 #'
 #' @return a ggplot object
+#' @importFrom grDevices rgb
+#' @importFrom utils modifyList
 #' @export
 watermark_img<-function(filename, x, y, width=32, location="br", alpha=1, ...){
   extra_gpar <- list(...)
@@ -60,6 +62,8 @@ watermark_img<-function(filename, x, y, width=32, location="br", alpha=1, ...){
 #' @param ... arguments passed to \code{grid::gpar()} (e.g. \code{alpha})
 #'
 #' @return a ggplot object
+#' @importFrom grDevices rgb
+#' @importFrom utils modifyList
 #' @export
 watermark_txt<-function(txt, x, y, location="br", rot=0, ...){
   extra_gpar <- list(...)

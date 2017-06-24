@@ -1,3 +1,5 @@
+utils::globalVariables(c("k", "name"))
+
 PALETTES <- (function(filename){
   pals <- jsonlite::fromJSON(filename)
   for(p_name in names(pals)){
