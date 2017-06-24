@@ -25,5 +25,5 @@ watermark_img(filename, x, y, width = 32, location = "br", alpha = 1, ...)
 a ggplot object
 }
 \description{
-Add a watermark image
+This functionality depends on the \code{readbitmap} package.
 }

@@ -1,5 +1,7 @@
 #' Add a watermark image
 #'
+#' This functionality depends on the \code{readbitmap} package.
+#'
 #' @param filename the filename of the
 #' @param x the x location of the watermark (0-1 scale)
 #' @param y the y location of the watermark (0-1 scale)

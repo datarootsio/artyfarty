@@ -12,12 +12,12 @@ Imports:
     dplyr,
     ggplot2,
     grDevices,
-    jsonlite,
-    readbitmap
+    jsonlite
 Suggests:
     knitr,
     rmarkdown,
     RColorBrewer,
+    readbitmap,
     testthat
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1
