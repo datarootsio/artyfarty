@@ -4,3 +4,5 @@
 `artyfarty` is a collection of ggplot themes published by dataroots. 
 
 For more info, please check out the examples and documentation [here](https://datarootsio.github.io/artyfarty).
+
+An introductory vignette can be found [here](https://datarootsio.github.io/artyfarty/articles/introduction.html)
