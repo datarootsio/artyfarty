@@ -23,7 +23,7 @@ library(ggplot2)
 `artyfarty` is a __work in progress__. For now you can install the development version using `devtools`.
 
 ```{r, eval=FALSE}
-devtools::install_github('bart6114/artyfarty')
+devtools::install_github('datarootsio/artyfarty')
 ```
 
 # Available themes
